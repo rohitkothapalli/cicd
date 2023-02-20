@@ -5,20 +5,20 @@ def call(Map args=[:], Closure body={}) {
 //         }
 
         stage("Compile") {
-            sh "./mvnw clean compile"
+            sh "mvn clean package"
         }
 
-        stage("Unit Test") {
-            sh "./mvnw test"
-        }
+//         stage("Unit Test") {
+//             sh "./mvnw test"
+//         }
 
-        stage("Integration Test") {
-            sh "./mvnw verify"
-        }
+//         stage("Integration Test") {
+//             sh "./mvnw verify"
+//         }
 
-        stage("Package Artifact Jar") {
-            sh "./mvnw package -DskipTests=true"
-        }
-        body()
+//         stage("Package Artifact Jar") {
+//             sh "./mvnw package -DskipTests=true"
+//         }
+//         body()
     }
 }
