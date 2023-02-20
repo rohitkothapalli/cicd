@@ -1,4 +1,4 @@
-def func(){
+def call(){
 
   sh 'mvn test'
 }
