@@ -5,7 +5,7 @@ def call(Map args=[:], Closure body={}) {
 //         }
 
         stage("Compile") {
-            sh "mvn clean package . "
+            sh "mvn -f pom.xml compile "
         }
 
 //         stage("Unit Test") {
