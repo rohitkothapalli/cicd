@@ -1,24 +1,8 @@
 def call(Map args=[:], Closure body={}) {
     node {
-//         stage("Checkout") {
-//             new Git(this).checkout("${args.repo}")
-//         }
 
-        stage("Compile") {
+        stage("Build") {
             sh "mvn -f /Users/krvnbangarraju/Desktop/Merchants compile "
         }
-
-//         stage("Unit Test") {
-//             sh "./mvnw test"
-//         }
-
-//         stage("Integration Test") {
-//             sh "./mvnw verify"
-//         }
-
-//         stage("Package Artifact Jar") {
-//             sh "./mvnw package -DskipTests=true"
-//         }
-//         body()
     }
 }
