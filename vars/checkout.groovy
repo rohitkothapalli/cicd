@@ -8,9 +8,5 @@ def call() {
       // Build the JAR file using Maven
       sh 'mvn clean package'
     }
-    stage('Archive') {
-      // Archive the JAR file as an artifact
-      archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
-    }
   }
 }
