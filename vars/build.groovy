@@ -1,4 +1,4 @@
-def call(Map args=[:], Closure body={}) {
+def call() {
     node {
 
         stage("Build") {
