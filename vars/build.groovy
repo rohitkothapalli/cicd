@@ -1,6 +1,6 @@
 def call() {
             
-            sh "cd ~/Users/krvnbangarraju/Desktop/Merchants"
+            sh "cd /Desktop/Merchants"
             sh "mvn clean install "
        
 }
