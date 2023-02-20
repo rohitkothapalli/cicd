@@ -1,8 +1,8 @@
 def call(Map args=[:], Closure body={}) {
     node {
-        stage("Checkout") {
-            new Git(this).checkout("${args.repo}")
-        }
+//         stage("Checkout") {
+//             new Git(this).checkout("${args.repo}")
+//         }
 
         stage("Compile") {
             sh "./mvnw clean compile"
