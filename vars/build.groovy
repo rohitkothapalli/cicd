@@ -1,6 +1,6 @@
 def call() {
             
             sh "cd /Users/krvnbangarraju/Desktop/Merchants"
-            sh "mvn clean package pom.xml"
+            sh "mvn package"
        
 }
