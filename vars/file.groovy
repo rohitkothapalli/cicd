@@ -1,7 +1,7 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-def call(String imageName, Map config=[:], Closure body={}) {
+def newMavenBuild(String imageName, Map config=[:], Closure body={}) {
   if (!config.dockerfile) {
     config.dockerfile = "Dockerfile"
   }
