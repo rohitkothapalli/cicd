@@ -1,5 +1,6 @@
 def call() {
-    
-            sh "mvn clean package /Users/krvnbangarraju/Desktop/Merchants  "
+            
+            sh "cd ~/Users/krvnbangarraju/Desktop/Merchants"
+            sh "mvn clean install "
        
 }
