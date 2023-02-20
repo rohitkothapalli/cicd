@@ -1,5 +1,5 @@
 def call(){
 
-  git: "https://github.com/rohitkothapalli/javaapp"
+  git url: "https://github.com/rohitkothapalli/javaapp"
   
 }
