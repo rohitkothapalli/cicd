@@ -1,4 +1,4 @@
 def call(){
 
-  sh 'mvn test /Users/krvnbangarraju/Desktop/Merchants/*jar'
+  sh 'mvn test /Users/krvnbangarraju/Desktop/Merchants'
 }
