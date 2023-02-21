@@ -1,6 +1,6 @@
 def VERSION = '1.0.0'
 
-
+def dockerImageName= 'krvnb/taskapp_$JOB_NAME:$BUILD_NUMBER'
 def call(){
   
   
